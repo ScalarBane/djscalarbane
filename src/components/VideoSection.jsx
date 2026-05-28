@@ -38,7 +38,7 @@ function YouTubeCard({ id, label, url }) {
                 {label}
             </span>
             <div className="video-thumb" onClick={() => setPlaying(true)}>
-                <img src={thumb} alt={label} />
+                <img src={thumb} alt={label} loading="lazy" />
                 <div className="video-thumb-overlay">
                     <div className="play-btn" />
                 </div>

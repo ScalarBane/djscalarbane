@@ -13,7 +13,7 @@ export default function GallerySection() {
             <div className="gallery-grid">
                 {images.map((src, i) => (
                     <div key={i}>
-                        <img src={src} alt={`Gallery ${i + 1}`} />
+                        <img src={src} alt={`Gallery ${i + 1}`} loading="lazy" />
                     </div>
                 ))}
             </div>
